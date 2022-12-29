@@ -1,0 +1,237 @@
+
+body {
+  overflow-x: hidden;
+
+}
+#myName {
+  padding: 0 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  color: black;
+  font-size: 35px;
+}
+#mySkills, .project, .project2, .project3 {
+  padding: 3rem 0 1rem 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+}
+section {
+  padding: 5px 10px;
+  margin: -10px -20px;
+}
+header {
+  padding: 0 1rem 20vh;
+  background: url(background.jpg) center / cover no-repeat #0089CD;
+  background-blend-mode: screen;
+  margin: -1rem -1rem 0;
+}
+.main-header, .main-nav, .main-menu, .menu, .sm, .skills, .ulskills, #project-flex, .clean, #project2-flex, #project3-flex, .footer, .footer-1, .yes, .yes1, .sm1, .back {
+ display: flex;
+}
+.main-header {
+ flex-direction:column;
+}
+.main-nav {
+  flex-direction:row;
+  justify-content: space-between;
+  order: -1;
+}
+.menu {
+  flex-direction: row;
+  padding:1rem 0 15rem;
+}
+.main-menu {
+  flex-direction: column;
+  flex-grow: 1;
+  list-style: none;
+}
+.item {
+  padding: 5px 5px;
+  margin: auto;
+  text-align: center;
+}
+.item:hover {
+  border-radius: 10px 10px;
+  background-image:linear-gradient(to top, rgba(74,193,252,.5) 65%, rgba(158,223,255,.5) 100%);
+}
+.bio:hover {
+  border-radius: 10px 10px;
+  width:163px;
+  background-image:linear-gradient(to top, rgba(123,206,255,.3) 1%, rgba(255,255,255,.5) 100%);
+}
+.keep-reading {
+   order: 1;
+}
+a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding-right: 3px;
+}
+
+.sm {
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.twitter, .linked, .github, .email, .firstp {
+  font-size: 20px;
+  color: black;
+}
+.firstp {
+  padding: 1rem 2rem 6rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+.ulskills, .clean {
+  flex-wrap: wrap;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skills{
+  flex-direction: column;
+  padding: 0 1.5rem 0 1.5rem;
+}
+img {
+  align-self: center;
+  padding-bottom: 1rem;
+}
+.html, .css, .js {
+  background-color: #00A2FF;
+  font-size: 20px;
+  border: 2.5px solid black;
+  padding: 5px 7px;
+}
+p, .bio {
+  padding: 0 5px;
+  font-size: 20px;
+  hyphens: auto;
+}
+.bio {
+  order: 1;
+}
+#project-flex, #project2-flex, #project3-flex {
+  flex-direction: column;
+  padding: .5rem 1.5rem;
+}
+.clean {
+  padding: 1rem 0;
+}
+.html, .css, .js {
+  border-radius: 10px 10px;
+}
+.dev, .dev2, .dev3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.project-img:hover, .project-img2:hover, .project-img3:hover {
+  box-shadow: -1px 1px 2px black,
+               1px 1px 2px black;
+
+  border-radius: 10px 10px;
+  background-image:linear-gradient(to top, #70CBFF, #70CBFF);
+}
+.project-img, .project-img2, .project-img3 {
+  border-radius: 8px 8px;
+}
+.pro-img, .pro-img2, .pro-img3 {
+  order: 1;
+  padding: 10px;
+}
+.footer {
+  margin-right: -1rem;
+  background: #00A2FF;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.footer-1 {
+  padding: 2rem 1rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.yazeed {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+}
+.yes {
+  padding: 2rem 1rem;
+  flex-direction: column;
+}
+.yazeed, .built {
+  padding: .5rem 0;
+  align-self: flex-start;
+}
+.git {
+  font-size: 28px;
+  text-align: center;
+}
+
+@media screen and (min-width: 364px ){
+  .sm {
+    justify-content: flex-start;
+  }
+  .twitter, .linked, .github, .email {
+    padding: 0 4px;
+  }
+  .pro-img, .pro-img2, .pro-img3 {
+    margin: auto;
+  }
+  .clean, .ulskills {
+    justify-content: space-around;
+  }
+  .yazeed, .built {
+    text-align: center;
+  }
+  .footer-1 {
+    justify-content: space-around;
+    flex-direction: column;
+
+  }
+  .footer {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.back {
+  flex-direction: column;
+}
+@media screen and (max-width:323px) {
+  .menu {
+    flex-direction: column;
+    padding: 1rem 0 5rem 0;
+  }
+  .ulskills, .clean {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width:556px){
+  .git, .sm2 {
+    padding: 3rem 0;
+  }
+  .li1, .li2, .li3 {
+    font-size: 20px;
+  }
+  .ulskills, .clean {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width:930px){
+  section {
+    padding: 0 23%;
+  }
+  .ulskills {
+    justify-content: space-around;
+  }
+  .footer-2 {
+    text-align: center;
+  }
+}
